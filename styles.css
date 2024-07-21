@@ -28,8 +28,8 @@ body {
 
 .light {
     position: absolute;
-    width: 150px; /* Reduced size */
-    height: 150px; /* Reduced size */
+    width: 100px; /* Reduced size */
+    height: 100px; /* Reduced size */
     background-color: rgba(0, 0, 255, 0.5);
     filter: blur(75px); /* Adjusted blur */
     border-radius: 50%;
@@ -57,7 +57,7 @@ body {
         transform: translate(-50%, 50%);
     }
     75% {
-        transform: translate(-50%, -50%);
+        transform: translate(50%, 50%);
     }
 }
 
@@ -68,14 +68,22 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism background */
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Glassmorphism blur effect */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem; /* Adjusted size */
     color: #222;
+    margin: 0;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Adjusted size */
     color: blue;
+    margin: 0;
 }
