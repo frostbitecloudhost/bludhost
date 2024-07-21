@@ -5,35 +5,34 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    background-color: #333;
+.header {
+    background-color: #2e2e2e;
     padding: 10px 0;
-    color: #fff;
 }
 
-nav {
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
-nav .logo img {
+.header .logo img {
     height: 40px;
 }
 
-nav ul {
+.header nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-nav ul li {
+.header nav ul li {
     display: inline;
 }
 
-nav ul li a {
+.header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -43,30 +42,52 @@ nav ul li a {
     background: url('images/hero-background.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
+    flex-direction: column;
 }
 
-.hero .cta {
-    background-color: #ff6600;
-    padding: 10px 20px;
+.hero .cta-buttons .btn {
+    background-color: #4caf50;
+    border: none;
     color: white;
+    padding: 15px 32px;
+    text-align: center;
     text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
     border-radius: 5px;
-    margin-top: 20px;
 }
 
 section {
-    padding: 50px;
+    padding: 50px 0;
     text-align: center;
 }
 
-footer {
-    background-color: #333;
+.plans, .support, .community, .account {
+    background-color: #f3f3f3;
+}
+
+.footer {
+    background-color: #2e2e2e;
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer .social-media {
+    display: flex;
+    gap: 10px;
 }
