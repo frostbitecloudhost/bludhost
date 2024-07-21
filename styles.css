@@ -6,15 +6,17 @@ body {
     align-items: center;
     background-color: #111;
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
 }
 
 .container {
     position: relative;
-    text-align: center;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .animated-background {
@@ -24,21 +26,22 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: 0;
 }
 
 .light {
     position: absolute;
-    width: 100px; /* Reduced size */
-    height: 100px; /* Reduced size */
+    width: 100px;
+    height: 100px;
     background-color: rgba(0, 0, 255, 0.5);
-    filter: blur(75px); /* Adjusted blur */
+    filter: blur(75px);
     border-radius: 50%;
-    animation: move 20s linear infinite; /* Slower animation */
+    animation: move 20s linear infinite;
 }
 
 .light1 {
-    top: 10%;
-    left: 10%;
+    top: 20%;
+    left: 20%;
 }
 
 .light2 {
@@ -62,28 +65,25 @@ body {
 }
 
 .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    position: relative;
     z-index: 1;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.1); /* Glassmorphism background */
-    border-radius: 10px;
-    backdrop-filter: blur(10px); /* Glassmorphism blur effect */
+    text-align: center;
+    padding: 2rem 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 h1 {
-    font-size: 2rem; /* Adjusted size */
-    color: #222;
-    margin: 0;
+    font-size: 3rem;
+    color: #e74c3c;
+    margin: 0 0 1rem 0;
 }
 
 h2 {
-    font-size: 1.5rem; /* Adjusted size */
-    color: blue;
+    font-size: 2rem;
+    color: #3498db;
     margin: 0;
 }
